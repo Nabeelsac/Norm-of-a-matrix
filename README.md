@@ -10,11 +10,10 @@ To write a program to find the 1-norm, 2-norm and infinity norm of the matrix an
 	3. Print the norm of the matrix in two decimal places.
 ## Program:
 ```Python
-# Register No: 212225220005
-# Developed By: AJAYPRABU.A
-
+# Register No: 212224100040
+# Developed By: Nather Nabeel S A C
 # 1-Norm of a Matrix
-```import os
+import os
 os.environ["OPENBLAS_NUM_THREADS"]="1"
 import numpy as np
 mat=np.array(eval(input()))
@@ -22,10 +21,25 @@ ans=np.linalg.norm(mat,1)
 norm_of_matrix="{:.2f}".format(ans)
 print(norm_of_matrix)
 
+# 2-Norm of a Matrix
+import os
+os.environ["OPENBLAS_NUM_THREADS"]="1"
+import numpy as np
+mat=np.array(eval(input()))
+ans=np.linalg.norm(mat,2)
+norm_of_matrix="{:.2f}".format(ans)
+print(norm_of_matrix)
+
+# Infinity Norm of a Matrix
+import os
+os.environ["OPENBLAS_NUM_THREADS"]="1"
+import numpy as np
+mat=np.array(eval(input()))
+ans=np.linalg.norm(mat,np.inf)
+norm_of_matrix="{:.2f}".format(ans)
+print(norm_of_matrix)
+
 ```
-
-
-
 
 # 2-Norm of a Matrix
 ```
@@ -55,21 +69,22 @@ print(norm_of_matrix)
 
 ```
 
-
-
-
-
-
 ## Output:
 ### 1-Norm of a Matrix
-<img width="722" height="247" alt="image" src="https://github.com/user-attachments/assets/5397ee7e-a0c2-49b5-9e59-3a0e681c2c89" />
+
+<img width="1286" height="890" alt="image" src="https://github.com/user-attachments/assets/715e8fc4-6e96-4951-92af-95236c1061ec" />
+
 
 
 ### 2-Norm of a Matrix
-<img width="727" height="282" alt="image" src="https://github.com/user-attachments/assets/49dfbc39-ff22-4079-9862-5f25cc6f43a6" />
+
+<img width="1281" height="857" alt="image" src="https://github.com/user-attachments/assets/47af80a0-9333-470d-9027-ad4fa1e6b47d" />
+
 
 ### Infinity Norm of a Matrix
-<img width="702" height="192" alt="image" src="https://github.com/user-attachments/assets/737ac6a8-0c73-4cf6-bac2-3db282e9275b" />
+
+<img width="1407" height="957" alt="image" src="https://github.com/user-attachments/assets/de08bd70-e470-471b-abbf-60eee5bc3195" />
+
 
 ## Result
 Thus the program for 1-norm, 2-norm and Infinity norm of a matrix are written and verified.
