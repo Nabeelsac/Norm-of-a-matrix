@@ -41,33 +41,6 @@ print(norm_of_matrix)
 
 ```
 
-# 2-Norm of a Matrix
-```
-
-import os
-os.environ["OPENBLAS_NUM_THREADS"]="1"
-import numpy as np
-mat=np.array(eval(input()))
-ans=np.linalg.norm(mat,2)
-norm_of_matrix="{:.2f}".format(ans)
-print(norm_of_matrix)
-
-```
-
-
-
-
-# Infinity Norm of a Matrix
-```
-import os
-os.environ["OPENBLAS_NUM_THREADS"]="1"
-import numpy as np
-mat=np.array(eval(input()))
-ans=np.linalg.norm(mat,np.inf)
-norm_of_matrix="{:.2f}".format(ans)
-print(norm_of_matrix)
-
-```
 
 ## Output:
 ### 1-Norm of a Matrix
